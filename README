@@ -8,3 +8,9 @@ docker run -it --rm -p 8080:8080 -v $(pwd)/webapps:/var/lib/tomcat/webapps/ tomc
 
 # tail logs
 docker logs -f <container name>
+
+# build the war
+time mvn clean package && cp -v target/cart-0.0.1-SNAPSHOT.war webapps/cart.war
+
+http://0.0.0.0:8080/cart/static/index.html
+http://0.0.0.0:8080/cart/items
