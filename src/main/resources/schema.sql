@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS item (
+	id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	name TEXT,
+	displayprice TEXT,
+	PRIMARY KEY (id)
+);

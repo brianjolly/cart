@@ -1,0 +1,11 @@
+<p>Your Cart</p>
+<% for(var item in items) { %>
+	<li>
+	<a href="#" 
+		class="item" 
+		data-action="remove" 
+		data-id="<%= item.get('id') %>" >
+		<em><%= item.get('name') %></em> <%= item.get('displayPrice') %>
+	</a>
+	</li>'
+<% } %>

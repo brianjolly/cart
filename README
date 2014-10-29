@@ -1,0 +1,10 @@
+# build tomcat server image
+docker build -t tomcat .
+
+# run it
+docker run -it --rm -p 8080:8080 -v $(pwd)/webapps:/var/lib/tomcat/webapps/ tomcat
+
+# to deploy just drop war file in ${pwd}/webapps
+
+# tail logs
+docker logs -f <container name>

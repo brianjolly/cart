@@ -1,0 +1,7 @@
+<h3>Products:</h3>
+<% for(var item in items) { %>
+	<li>
+		<em><%= items[item].name %></em> '<%= items[item].displayPrice %> 
+		<a href="#buy/<%= items[item].id %>">Buy Now! -></a>
+	</li>'
+<% } %>

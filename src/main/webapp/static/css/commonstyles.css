@@ -1,0 +1,79 @@
+* {
+	padding:0; margin:0;
+}
+
+h2 ,
+h3 {
+	padding: 0 0 0 .4em;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.productsDisplay {
+	padding: 10px;
+	float: left;
+	width: 50%;
+	box-shadow: 0 0 3px #999;
+}
+
+.productsDisplay li {
+	padding: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+.productsDisplay a {
+	font-style: normal;
+}
+
+.productsDisplay a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.productsDisplay li:hover {
+	text-decoration: none;
+	background: #f0fff0;
+}
+
+.cart {
+	float: right;
+	width: 30%;
+	box-shadow: 0 0 3px #999;
+}
+
+.cart ul {
+	padding: 10px 0 0 .5em;
+}
+
+.cart li {
+	padding: .5em 0 .3em 1em;
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+
+.cart li a {
+	font-weight: normal;
+}
+
+.cart li a:hover::after {
+	text-decoration: none;
+	font-size: 2.0em;
+	color: #f00;
+	display: block;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	content: "-";
+}
+
